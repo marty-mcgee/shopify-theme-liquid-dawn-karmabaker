@@ -1,6 +1,48 @@
 /* [MM] Custom CSS */
+#pickup-container {
+  display: flex;
+  flex-direction: row;
+}
 #pickup-container .js-toggle-pickup {
-  display: none;
+  display: none !important;
+}
+.cr-delivery-methods {
+  display: none !important;
+  width: 50% !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+#pickup-container.v2, #pickup-container.v3 {
+  align-items: center !important; /* default is "baseline", also try "end" */
+}
+#cr-delivery-details {
+  margin-top: 0 !important;
+  width: 100% !important;
+  /* position: relative; */
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+.cr-delivery-method {
+  border-radius: 5px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  list-style: none;
+  display: flex !important;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0;
+  margin: 0 9px 0 0;
+  flex-direction: row-reverse;
+}
+.cart__footer {
+  display: flex;
+  justify-content: space-between;
+  border: 0;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cr-delivery-date-wrapper {
+  width: 45%;
 }
 
 /* [MM] per page "Custom CSS"
@@ -17,8 +59,7 @@ h3 {
 /* Color custom properties */
 
 :root,
-.color-background-1 {
-  --color-foreground: var(--color-base-text);
+.color-background-1 {  --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
