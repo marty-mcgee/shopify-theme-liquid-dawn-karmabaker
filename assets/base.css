@@ -1,4 +1,5 @@
 /* [MM] Custom CSS */
+/**/
 #pickup-container {
   display: flex;
   flex-direction: row;
@@ -13,12 +14,11 @@
   margin-top: 0 !important;
 }
 #pickup-container.v2, #pickup-container.v3 {
-  align-items: center !important; /* default is "baseline", also try "end" */
+  align-items: center !important;
 }
 #cr-delivery-details {
   margin-top: 0 !important;
   width: 100% !important;
-  /* position: relative; */
   display: flex !important;
   flex-direction: row-reverse !important;
 }
@@ -44,6 +44,16 @@
 .cr-delivery-date-wrapper {
   width: 45%;
 }
+.cart__note {
+  border-bottom: 0px solid gray;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+/**/
+.picker--time, .picker__holder {
+  left: inherit !important;
+  right: 0 !important;
+}
 
 /* [MM] per page "Custom CSS"
 h3 {
@@ -52,7 +62,28 @@ h3 {
 .price {
   font-size: 1.4rem;
 }
+.banner__text > p {
+  background-color: rgba(33,0,0,0.3);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.banner__box {
+  background-color: rgba(44, 0, 0, 0.3) !important;
+  padding: 32px 64px !important;
+  border-radius: 8px !important;
+}
 */
+
+slider-component {
+  /*
+  position: relative;
+  display: block; 
+  */
+  --desktop-margin-left-first-item: 5rem !important;
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+
 
 /* BEGIN THEME CSS CODE */
 
